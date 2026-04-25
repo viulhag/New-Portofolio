@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0*/>
+        <title>Portofolio | ViulHagi</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+
+    <body>
+        <nav>
+            <h1> Portofolio Viul Hagi</h1>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#about">TentangSaya</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero">
+            <h1>Halo ,<span>Saya Viul Hagi</span></h1>
+            <p>Web Developer | Programer | Tech Entusiast</p>
+            <button onclick="scrollToContact()">Hubungi Saya</button>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang web developer yang fokus pembuatan website</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Beberapa proyek yang telah saya kerjakan.</p>
+
+            <div class="project-list">
+                <div class="card">
+                    <h3>Project 1</h3>
+                    <p>Website e-comerse sederhana menggunakan Html,CSS,JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Project 2</h3>
+                    <p>Aplikasi management tugas berbasis web dengan fitur CRUD menggunakan dan Node.J.S</p>
+                </div>
+                <div class="card">
+                    <h3>Project 3 </h3>
+                    <p>Blog pribadi dengan sisstem autentikasi menggunakan Django dan PostgreSQL </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Kontak Saya</h2>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Masukan Nama" required/>
+                <input type="email" placeholder="Masukan Email" required/>
+                <textarea placeholder="Tulis Pesan Anda" required></textarea>
+                <button type="submit">kirim</button>
+            </form>
+            <p id="message" class="message"></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Viul Hagi. All rights reserved </p>
+        </footer>
+     </body>
+     
+     <script src="./script.js"></script>
+
+</html>
